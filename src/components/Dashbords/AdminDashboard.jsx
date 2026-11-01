@@ -1,46 +1,21 @@
+import React, { useEffect, useState, useCallback } from "react";
+import {
+  Card, Typography, message, Row, Col, Statistic, Button, Modal, Input,
+  Popconfirm, Space, Select, Switch, Spin, Table, Tabs, Tag, Form, Tooltip,
+  Alert, Descriptions, Divider, Badge, Progress, Timeline, Upload, Image, List, Avatar
+} from "antd";
+import { useNavigate } from "react-router-dom";
 import { 
-  UserAddOutlined, 
-  UserOutlined, 
-  EditOutlined, 
-  DeleteOutlined, 
-  EyeOutlined,
-  CheckCircleOutlined,
-  CloseCircleOutlined,
-  ClockCircleOutlined,
-  ReloadOutlined,
-  SettingOutlined,
-  TeamOutlined,
-  BankOutlined,
-  ShopOutlined,
-  DatabaseOutlined,
-  LogoutOutlined,
-  FileTextOutlined,
-  WarningOutlined,
-  SafetyOutlined,
-  HomeOutlined,
-  SolutionOutlined,
-  LineChartOutlined,
-  RiseOutlined,
-  FallOutlined,
-  CheckOutlined,
-  CalendarOutlined,
-  BarChartOutlined,
-  PercentageOutlined,
-  DashboardOutlined,
-  DollarOutlined,
-  CreditCardOutlined,
-  TransactionOutlined,
-  HistoryOutlined,
-  FileDoneOutlined,
-  MoneyCollectOutlined,
-  PhoneOutlined,
-  VerifiedOutlined,
-  StopOutlined,
-  SyncOutlined,
-  FileExcelOutlined,
-  DownloadOutlined,
-  UploadOutlined,
-  InboxOutlined
+  UserAddOutlined, UserOutlined, EditOutlined, DeleteOutlined, EyeOutlined,
+  CheckCircleOutlined, CloseCircleOutlined, ClockCircleOutlined, ReloadOutlined,
+  SettingOutlined, TeamOutlined, BankOutlined, ShopOutlined, DatabaseOutlined,
+  LogoutOutlined, FileTextOutlined, WarningOutlined, SafetyOutlined, HomeOutlined,
+  SolutionOutlined, LineChartOutlined, RiseOutlined, FallOutlined, CheckOutlined,
+  CalendarOutlined, BarChartOutlined, PercentageOutlined, DashboardOutlined,
+  DollarOutlined, CreditCardOutlined, TransactionOutlined, HistoryOutlined,
+  FileDoneOutlined, MoneyCollectOutlined, PhoneOutlined, VerifiedOutlined,
+  StopOutlined, SyncOutlined, FileExcelOutlined, DownloadOutlined, UploadOutlined,
+  InboxOutlined, AccountBookOutlined // <-- I am keeping this IF it exists in your version, but removing the fake ones below
 } from "@ant-design/icons";
 import { apiFetch } from "../../utils/api";
 import dayjs from "dayjs";
