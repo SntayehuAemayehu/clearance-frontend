@@ -1,0 +1,310 @@
+/* ============================= */
+/* RegisterPage.css - Professional & Colorful Version */
+/* ============================= */
+
+.register-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-background {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  z-index: 0;
+}
+
+.background-blur {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  z-index: 0;
+}
+
+.register-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+}
+
+.register-card {
+  border-radius: 24px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2),
+              0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25),
+              0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.register-steps {
+  margin: 40px 0;
+}
+
+.register-steps .ant-steps-item-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.register-steps .ant-steps-item-icon {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.step-content {
+  min-height: 450px;
+  padding: 20px 0;
+}
+
+.step-panel {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.step-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step-alert {
+  margin-bottom: 30px;
+  border-radius: 14px;
+  border: none;
+  background: #e6f7ff;
+}
+
+.register-form .form-item-animated {
+  margin-bottom: 24px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.form-input, .form-select, .ant-input-password {
+  border-radius: 14px;
+  border: 2px solid #e8e8e8;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-input:hover, .form-select:hover, .ant-input-password:hover {
+  border-color: #667eea;
+}
+
+.form-input:focus, .form-select:focus, .ant-input-password:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.15);
+}
+
+.input-icon {
+  color: #667eea;
+  opacity: 0.9;
+}
+
+.college-option {
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+.password-requirements {
+  background: #f0f5ff;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 20px;
+  border-left: 5px solid #667eea;
+}
+
+.password-requirements ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+.password-requirements li {
+  margin-bottom: 6px;
+}
+
+.form-actions {
+  margin-top: 35px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav-button, .submit-button {
+  border-radius: 14px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 35px;
+  transition: all 0.3s ease;
+}
+
+.prev-button {
+  border: 2px solid #e8e8e8;
+  background: transparent;
+  color: #555;
+}
+
+.prev-button:hover {
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateX(-5px);
+}
+
+.next-button, .submit-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  min-width: 220px;
+}
+
+.next-button:hover, .submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(102, 126, 234, 0.3);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.login-redirect {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.login-link {
+  font-weight: 500;
+  color: #667eea;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.login-link:hover {
+  color: #764ba2;
+}
+
+.loading-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-card {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .register-steps { display: none; }
+
+  .navigation-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-button, .submit-button { width: 100%; min-width: unset; }
+
+  .logo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .register-card {
+    background: rgba(20, 20, 30, 0.95);
+    color: #fff;
+  }
+
+  .register-subtitle,
+  .password-requirements,
+  .password-requirements li {
+    color: #bbb;
+  }
+
+  .step-alert { background: rgba(255, 255, 255, 0.05); }
+
+  .form-input, .form-select, .ant-input-password {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+
+  .password-requirements {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}

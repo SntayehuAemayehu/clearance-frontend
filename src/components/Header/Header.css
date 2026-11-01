@@ -1,0 +1,229 @@
+/* =====================================================
+   PREMIUM GLASSMORPHIC HEADER — Modern Redesign
+   ===================================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 12px 0;
+
+  background: var(--header-bg);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.25);
+}
+
+.header:hover {
+  background: rgba(0, 38, 77, 0.75);
+}
+
+/* ------------------ CONTAINER ------------------ */
+.header-container {
+  width: 92%;
+  max-width: 1350px;
+  margin: auto;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =====================================================
+   LOGO AREA
+   ===================================================== */
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 14px;
+  min-width: fit-content;
+}
+
+.logo-img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.08) rotate(6deg);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.55);
+}
+
+.header-logo a {
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: var(--header-text);
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.header-logo a:hover {
+  color: #ffe454;
+  text-shadow: 0 0 14px rgba(255, 221, 85, 0.8);
+}
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+.nav {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 6px 4px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Neon underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: #ffe454;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffe454;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* =====================================================
+   AUTH BUTTONS
+   ===================================================== */
+.header-auth .logout-btn,
+.header-auth .signin-btn {
+  padding: 9px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #ffe454, #ffb300);
+  color: #003566;
+
+  box-shadow: 0px 3px 12px rgba(255, 215, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  cursor: pointer;
+}
+
+.header-auth .logout-btn:hover,
+.header-auth .signin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 16px rgba(255, 215, 0, 0.6);
+}
+
+/* =====================================================
+   THEME TOGGLE — Animated
+   ===================================================== */
+.theme-toggle-btn {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  margin-left: 12px;
+
+  transition: 0.35s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.12) rotate(10deg);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.theme-toggle-btn svg {
+  stroke: var(--header-text);
+  transition: 0.4s ease;
+}
+
+/* =====================================================
+   MOBILE MODE
+   ===================================================== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--header-text);
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 22px 0;
+
+    background: rgba(0, 40, 80, 0.94);
+    backdrop-filter: blur(6px);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+  }
+
+  .nav.open {
+    max-height: 380px;
+  }
+
+  .header-auth {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-logo a {
+    font-size: 1.3rem;
+  }
+}
