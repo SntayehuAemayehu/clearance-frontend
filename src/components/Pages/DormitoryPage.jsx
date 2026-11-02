@@ -95,7 +95,6 @@ import {
   VideoCameraOutlined,
   BankOutlined,
   CreditCardOutlined,
-  QrcodeOutlined,
   ReconciliationOutlined,
   FileDoneOutlined,
   ProfileOutlined,
