@@ -15,7 +15,6 @@ import {
   ProfileOutlined, MessageOutlined, WechatOutlined, ThunderboltOutlined,
   PhoneOutlined, SaveOutlined, SendOutlined, SortAscendingOutlined,
   SortDescendingOutlined, RiseOutlined, FileDoneOutlined, FileSyncOutlined,
-  FileExcelOutlined, FileSearchOutlined
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
@@ -2488,7 +2487,6 @@ export default function DepartmentHeadPage() {
           <Col>
             <Space direction="vertical" size={0}>
               <Title level={2} style={{ color: 'white', margin: 0 }}>
-                <DashboardFilled /> Department Head Dashboard
               </Title>
               <Text style={{ color: 'rgba(255,255,255,0.85)', fontSize: '16px' }}>
                 Welcome, {profileData?.first_name || user?.username || 'Department Head'} - {profileData?.department_name || 'Department'}
