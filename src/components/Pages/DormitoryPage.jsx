@@ -85,7 +85,6 @@ import {
   TeamOutlined,
   BellOutlined,
   DashboardOutlined,
-  SafetyCertificateOutlined,
   ApartmentOutlined,
   AppstoreOutlined,
   FormOutlined,
