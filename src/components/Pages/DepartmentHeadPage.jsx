@@ -1,85 +1,27 @@
-// DepartmentHeadPage.jsx - PROFESSIONAL UI VERSION WITH CLICKABLE STATS CARDS
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
-  Card,
-  Button,
-  Typography,
-  Input,
-  Modal,
-  Spin,
-  Space,
-  Row,
-  Col,
-  Statistic,
-  Tag,
-  message,
-  Alert,
-  Descriptions,
-  Table,
-  Badge,
-  Steps,
-  Tooltip,
-  Popconfirm,
-  notification,
-  Form,
-  Select,
-  Progress,
-  Divider,
-  Upload,
-  Avatar,
-  Dropdown,
-  Timeline,
-  List,
-  Empty,
-  Tabs
+  Card, Button, Typography, Input, Modal, Spin, Space, Row, Col,
+  Statistic, Tag, message, Alert, Descriptions, Table, Badge, Steps,
+  Tooltip, Popconfirm, notification, Form, Select, Progress, Divider,
+  Upload, Avatar, Dropdown, Timeline, List, Empty, Tabs
 } from "antd";
 import {
-  LogoutOutlined,
-  CheckOutlined,
-  CloseOutlined,
-  SearchOutlined,
-  EyeOutlined,
-  ReloadOutlined,
-  UserOutlined,
-  MailOutlined,
-  IdcardOutlined,
-  HistoryOutlined,
-  FileTextOutlined,
-  CalendarOutlined,
-  ClockCircleOutlined,
-  ShopOutlined,
-  DeleteOutlined,
-  TeamOutlined,
-  DashboardOutlined,
-  BarChartOutlined,
-  BellOutlined,
-  DownloadOutlined,
-  CheckCircleOutlined,
-  CloseCircleOutlined,
-  ProfileOutlined,
-  MessageOutlined,
-  WechatOutlined,
-  ThunderboltOutlined,
-  PhoneOutlined,
-  SaveOutlined,
-  SendOutlined,
-  SortAscendingOutlined,
-  SortDescendingOutlined,
-  RiseOutlined,
-  DashboardFilled,
-  FileDoneOutlined,
-  FileProtectOutlined,
-  FileSyncOutlined,
-  FileExcelOutlined,
-  FileSearchOutlined
+  LogoutOutlined, CheckOutlined, CloseOutlined, SearchOutlined,
+  EyeOutlined, ReloadOutlined, UserOutlined, MailOutlined, IdcardOutlined,
+  HistoryOutlined, FileTextOutlined, CalendarOutlined, ClockCircleOutlined,
+  ShopOutlined, DeleteOutlined, TeamOutlined, DashboardOutlined, BarChartOutlined,
+  BellOutlined, DownloadOutlined, CheckCircleOutlined, CloseCircleOutlined,
+  ProfileOutlined, MessageOutlined, WechatOutlined, ThunderboltOutlined,
+  PhoneOutlined, SaveOutlined, SendOutlined, SortAscendingOutlined,
+  SortDescendingOutlined, RiseOutlined, FileDoneOutlined, FileSyncOutlined,
+  FileExcelOutlined, FileSearchOutlined
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 
-// Extend dayjs
 dayjs.extend(relativeTime);
 dayjs.extend(advancedFormat);
 
@@ -87,7 +29,6 @@ const { Title, Text } = Typography;
 const { Step } = Steps;
 const { TextArea } = Input;
 const API_BASE = "http://127.0.0.1:8000/api/";
-
 export default function DepartmentHeadPage() {
   const navigate = useNavigate();
   const [form] = Form.useForm();
