@@ -12,7 +12,7 @@ import {
   LogoutOutlined, FileTextOutlined, WarningOutlined, SafetyOutlined, HomeOutlined,
   SolutionOutlined, LineChartOutlined, RiseOutlined, FallOutlined, CheckOutlined,
   CalendarOutlined, BarChartOutlined, PercentageOutlined, DashboardOutlined,
-  DollarOutlined, CreditCardOutlined, TransactionOutlined, HistoryOutlined,
+  DollarOutlined, CreditCardOutlined, HistoryOutlined,
   FileDoneOutlined, MoneyCollectOutlined, PhoneOutlined, VerifiedOutlined,
   StopOutlined, SyncOutlined, FileExcelOutlined, DownloadOutlined, UploadOutlined,
   InboxOutlined
