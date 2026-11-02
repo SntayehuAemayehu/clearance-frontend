@@ -92,7 +92,6 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   UploadOutlined,
-  PictureOutlined,
   VideoCameraOutlined,
   BankOutlined,
   CreditCardOutlined,
