@@ -96,7 +96,6 @@ import {
   CreditCardOutlined,
   FileDoneOutlined,
   ProfileOutlined,
-  ScheduleOutlined,
   StarOutlined,
   TrophyOutlined,
   RiseOutlined,
