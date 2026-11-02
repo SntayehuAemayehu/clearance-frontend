@@ -180,7 +180,6 @@ export default function DormitoryPage() {
     { id: 2, name: "Window Damage", key: "window", icon: <EnvironmentOutlined />, price: 3000, selected: false },
     { id: 3, name: "Bed Damage", key: "bed", icon: <HomeOutlined />, price: 8000, selected: false },
     { id: 4, name: "Wall Damage", key: "wall", icon: <BuildOutlined />, price: 4000, selected: false },
-    { id: 5, name: "Floor Damage", key: "floor", icon: <BuildOutlined />, price: 6000, selected: false },
     { id: 6, name: "Electrical Issues", key: "electrical", icon: <ToolOutlined />, price: 2500, selected: false },
     { id: 7, name: "Missing Key", key: "key", icon: <KeyOutlined />, price: 1500, selected: false },
     { id: 8, name: "Safety Equipment", key: "safety", icon: <SafetyOutlined />, price: 10000, selected: false },
