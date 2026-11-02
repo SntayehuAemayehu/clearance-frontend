@@ -1,3 +1,4 @@
+import { FormItem } from "antd";
 import React, { useEffect, useState, createContext, useContext } from "react";
 import {
   BrowserRouter as Router,
@@ -30,7 +31,7 @@ import Footer from "./components/Footer/Footer";
 import ProfilePage from "./components/Pages/ProfilePage";
 import ChangeProfile from "./components/Pages/ChangeProfile";
 import AdminLogin from "./components/Authen/AdminLogin";
- import LearnMorePage from "./components/Pages/LearnMorePage";
+import LearnMorePage from "./components/Pages/LearnMorePage";
 
 // Import the payment components
 import StudentPaymentPage from "./components/Payments/StudentPaymentPage";
