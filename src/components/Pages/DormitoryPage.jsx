@@ -96,8 +96,6 @@ import {
   CreditCardOutlined,
   FileDoneOutlined,
   ProfileOutlined,
-  StarOutlined,
-  TrophyOutlined,
   RiseOutlined,
   FallOutlined
 } from "@ant-design/icons";
